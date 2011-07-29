@@ -2,6 +2,7 @@
 # If you want to use a different backend you have to remove all occurences
 # of "djangoappengine" from this file.
 from djangoappengine.settings_base import *
+from djangoappengine.utils import on_production_server
 
 import os
 
