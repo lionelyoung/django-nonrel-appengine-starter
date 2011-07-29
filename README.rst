@@ -7,8 +7,7 @@
 Requirements
 ============
 * Python 2.5+
-* virtualenv and pip
-* `Google App Engine SDK for Python <http://code.google.com/appengine/downloads.html#Download_the_Google_App_Engine_SDK>`_ (1.5.2 included)
+* virtualenv
 
 Installation
 =============
@@ -17,6 +16,10 @@ Installation
 * Include google_appengine in your PATH
 * Change into the myproject directory and run ./manage deploy
 * ./manage remote createsuperuser
+
+Development
+===========
+* Run devutils/smtp_server.py to view outgoing emails on stdout
 
 References
 ==========
