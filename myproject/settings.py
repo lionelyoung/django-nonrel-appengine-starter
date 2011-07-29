@@ -27,6 +27,7 @@ INSTALLED_APPS = (
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
+LOGIN_REDIRECT_URL="/" # default is /accounts/profile
 
 MIDDLEWARE_CLASSES = (
     # This loads the index definitions, so it has to come first
