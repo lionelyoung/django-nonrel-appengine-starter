@@ -1,0 +1,8 @@
+*~
+*.swp
+*.pyc
+.deps
+.hgeol
+.hgignore
+.hg
+.gaedata
