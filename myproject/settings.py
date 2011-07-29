@@ -20,10 +20,13 @@ INSTALLED_APPS = (
     'djangotoolbox',
     'autoload',
     'dbindexer',
+    'registration',
 
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 
 MIDDLEWARE_CLASSES = (
     # This loads the index definitions, so it has to come first
