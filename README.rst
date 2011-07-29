@@ -14,8 +14,9 @@ Installation
 * virtualenv --python=python2.5 --no-site-packages .
 * source bin/activate
 * Include google_appengine in your PATH
-* Change into the myproject directory and run ./manage deploy
-* ./manage remote createsuperuser
+* Edit line 2 in myproject/app.yaml to point to your application
+* Change into the myproject directory and run python manage deploy
+* Optional: python manage remote createsuperuser
 
 Development
 ===========
