@@ -30,6 +30,8 @@ INSTALLED_APPS = (
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 LOGIN_REDIRECT_URL="/" # default is /accounts/profile
 if on_production_server:
+    # To send, be sure to add this email as a 'Viewer' in GAE:
+    # Administration->Permissions->Invite user to collaborate
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = 'REPLACEME@gmail.com'
     EMAIL_HOST_PASSWORD = 'REPLACEME'
