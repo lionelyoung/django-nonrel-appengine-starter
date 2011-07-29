@@ -29,6 +29,19 @@ INSTALLED_APPS = (
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 LOGIN_REDIRECT_URL="/" # default is /accounts/profile
+if on_production_server:
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = 'REPLACEME@gmail.com'
+    EMAIL_HOST_PASSWORD = 'REPLACEME'
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    DEFAULT_FROM_EMAIL = 'REPLACEME@gmail.com'
+    SERVER_EMAIL = 'REPLACEME@gmail.com'
+else:
+    # Start devutils/smtp_server.py to see outgoing messages
+    EMAIL_HOST = 'localhost'
+    EMAIL_PORT = 1025
+    DEFAULT_FROM_EMAIL = 'webmaster@localhost'
 
 MIDDLEWARE_CLASSES = (
     # This loads the index definitions, so it has to come first
