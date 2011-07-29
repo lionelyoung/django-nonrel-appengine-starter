@@ -14,9 +14,9 @@ Installation
 =============
 * virtualenv --python=python2.5 --no-site-packages .
 * source bin/activate
-* pip install -E . -r pip-requirements.txt
 * Include google_appengine in your PATH
-* Set your PYTHONPATH to the virtualenv directory
+* Change into the myproject directory and run ./manage deploy
+* ./manage remote createsuperuser
 
 References
 ==========
