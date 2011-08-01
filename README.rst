@@ -15,6 +15,7 @@ Installation
 * source bin/activate
 * Include google_appengine in your PATH
 * Edit line 2 in myproject/app.yaml to point to your application
+* Change secret key in settings.py
 * Change into the myproject directory and run python manage deploy
 * Optional: python manage remote createsuperuser
 
