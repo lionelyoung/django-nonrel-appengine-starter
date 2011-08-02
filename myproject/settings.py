@@ -23,6 +23,7 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.sessions',
     'djangotoolbox',
+    'permission_backend_nonrel',
     'autoload',
     'dbindexer',
     'registration',
