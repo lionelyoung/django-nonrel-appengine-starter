@@ -9,6 +9,11 @@ Requirements
 * Python 2.5+
 * virtualenv
 
+Includes
+========
+* django-permission-backend-nonrel: Enables Django Groups, which is normally
+  disabled in nonrel, due to the  implicit many-to-many relationship
+
 Installation
 =============
 * virtualenv --python=python2.5 --no-site-packages .
