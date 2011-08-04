@@ -1,0 +1,7 @@
+/* Put labels for form elements on its own line
+ * http://stackoverflow.com/questions/65849/how-to-insert-line-breaks-in-html-documents-using-css
+ */
+label {
+  display: block;
+  clear: both;
+}
