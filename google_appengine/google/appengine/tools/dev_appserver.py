@@ -1162,12 +1162,13 @@ class FakeFile(file):
 
 
 
+  os_source_location = inspect.getsourcefile(os)
 
   ALLOWED_DIRS = set([
-      os.path.normcase(os.path.realpath(os.path.dirname(os.__file__))),
-      os.path.normcase(os.path.abspath(os.path.dirname(os.__file__))),
-      os.path.normcase(os.path.dirname(os.path.realpath(os.__file__))),
-      os.path.normcase(os.path.dirname(os.path.abspath(os.__file__))),
+      os.path.normcase(os.path.realpath(os.path.dirname(os_source_location))),
+      os.path.normcase(os.path.abspath(os.path.dirname(os_source_location))),
+      os.path.normcase(os.path.dirname(os.path.realpath(os_source_location))),
+      os.path.normcase(os.path.dirname(os.path.abspath(os_source_location))),
   ])
 
 
